@@ -1,0 +1,96 @@
+.task_element {
+  height: auto;
+  width: 40rem;
+  margin: 1rem;
+  padding: 1rem 2rem;
+  background-color: var(--secondary);
+  border-radius: 1rem;
+  color: var(--textSoft);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  .status {
+    position: absolute;
+    top: -0.5rem;
+    right: -0.5rem;
+    border: 2px solid var(--active);
+    border-radius: 50%;
+    width: 2.2rem;
+    height: 2.2rem;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    background-color: var(--primary);
+    &:hover {
+      border-color: var(--text);
+    }
+    .icon {
+      font-size: 1.7rem;
+      color: var(--text);
+    }
+  }
+  .active {
+    border-color: var(--text);
+    background-color: var(--active);
+  }
+  b {
+    font-size: 2rem;
+    color: var(--dark);
+    font-weight: 500;
+    line-height: 1.2;
+    max-height: 3.6em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+  }
+  p {
+    font-size: 1.5rem;
+    color: var(--textSoft);
+    line-height: 1.2;
+    max-height: 3.6em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    margin-top: 1rem;
+  }
+  .actions {
+    // border: 1px solid red;
+    margin-top: 1rem;
+    justify-self: last baseline;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    .ctc {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      &:hover {
+        color: var(--active);
+        scale: 1.1;
+      }
+      span {
+        font-size: 1.5rem;
+        color: var(--active);
+        text-transform: capitalize;
+      }
+      &:nth-child(2) {
+        margin-left: auto;
+        margin-right: 1rem;
+        .icon {
+          font-size: 1.6rem;
+          color: var(--text);
+        }
+      }
+      &:nth-child(3) {
+        .icon {
+          font-size: 1.6rem;
+          color: hotpink;
+        }
+      }
+    }
+  }
+}
