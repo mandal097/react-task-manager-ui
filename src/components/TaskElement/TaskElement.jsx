@@ -12,7 +12,6 @@ const TaskElement = ({ details }) => {
   const dispatch = useDispatch()
   const navigate = useNavigate()
   const [showForm, setShowForm] = useState(false);
-  // const [status, setStatus] = useState(Boolean);
 
 
 

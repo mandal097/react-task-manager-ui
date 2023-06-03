@@ -50,7 +50,7 @@ const Tasks = () => {
             ))
           }
 
-          {tasks?.length === 0 && < ZeroTask />}
+          {!tasks.length && < ZeroTask />}
         </div>
       </div>
       {showForm && <TaskForm setShowForm={setShowForm} type='new' />}
