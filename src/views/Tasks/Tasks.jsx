@@ -39,7 +39,7 @@ const Tasks = () => {
   return (
     <>
       <div className={styles.tasks}>
-        <div className={styles.create_btn} onClick={()=>setShowForm(true)}>
+        <div className={styles.create_btn} onClick={() => setShowForm(true)}>
           create new task   <BsPlusCircleFill className={styles.icon} />
         </div>
         <div className={styles.tasks_container}>
@@ -50,7 +50,7 @@ const Tasks = () => {
             ))
           }
 
-          {!tasks.length && < ZeroTask />}
+          {tasks === null && < ZeroTask />}
         </div>
       </div>
       {showForm && <TaskForm setShowForm={setShowForm} type='new' />}
