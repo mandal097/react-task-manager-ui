@@ -102,16 +102,6 @@ const TaskForm = ({ setShowForm, type, inputDetails }) => {
                     ></textarea>
                 </div>
 
-                {/* {type === 'update' && <div div className={styles.input_field}>
-                    <label htmlFor="">Status :</label>
-                    <select required onChange={(e) => setStatus(e.target.value)} >
-                        <option value="" >Select quantity </option>
-                        <option value="1 ton">1 ton</option>
-                        <option value="2 ton">2 ton</option>
-                        <option value="3 ton">3 ton</option>
-                    </select>
-                </div>} */}
-
                 <div className={styles}>
                     <p style={{ color: 'hotpink', fontSize: "1.8rem" }}>{responseMessage}</p>
                 </div>

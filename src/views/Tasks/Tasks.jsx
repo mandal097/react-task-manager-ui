@@ -43,6 +43,8 @@ const Tasks = () => {
           create new task   <BsPlusCircleFill className={styles.icon} />
         </div>
         <div className={styles.tasks_container}>
+          {/* {
+          } */}
           {
             tasks &&
             tasks?.map(ele => (
